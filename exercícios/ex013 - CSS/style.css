@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-color: gray;
+    color: navy;
+}
+
+h1 {
+    background-color: navy;
+    color: goldenrod;
+}

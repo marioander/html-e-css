@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="480" controls autoplay loop>
+        <source src="midia/waves-1080.mp4" type="video/mp4">
+        <source src="midia/waves-1080.ogv" type="video/ogg">
+        <source src="midia/waves-480.webm" type="video/webm">
+    </video>
+    <h1>Incorporando Vídeos Externos (YouTube)</h1>
+    <p>Este vídeo está hospedado no servidor de terceiros.</p>
+    <iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/jEnd8JIMii4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <h2>Exemplo 1 (som ambiente):</h2>
+    <audio src="midia/Waves Crashing on Rock Beach.mp3" autoplay controls loop> </audio>
+    <h2>Exemplo 2 (música):</h2>
+    <audio controls autoplay>
+        <source src="midia/Lazy Walk - Cheel.mp3" type="audio/mpeg">
+        <source src="midia/Lazy Walk - Cheel.ogg" type="audio/ogg">
+        <source src="midia/Lazy Walk - Cheel.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente o seu dispositivo não consegue reproduzir áudio. <a href="midia/Retribution - NEFFEX.mp3">Clique aqui para realizar o download da mídia.</a></p>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+</body>
+</html>

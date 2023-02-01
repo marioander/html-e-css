@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags (tags de agrupamento)</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 3px;
+            word-spacing: 20px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        a:hover {
+             text-decoration: underline;
+             color: goldenrod;
+        }
+
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.452);
+        }
+
+        .artigo1 {
+            background-color: lightgray;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        .escritor {
+            background-color: rgb(149, 149, 149);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0%;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anderground</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+            <a href="#">Link5</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p class="assuntos">Games Cinema Esportes</p>
+        </section>
+        <section>
+            <article class="artigo1">
+                <h2>Notícias sobre Tecnologia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod ipsa eligendi voluptatum magni repudiandae, molestias quaerat natus obcaecati! Iure aperiam tempora perferendis saepe, architecto nulla excepturi quos asperiores culpa!</p>
+                <aside class="escritor">
+                    <p>Artigo escrito por Mário Ander</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Mário Ander</p>
+    </footer>
+</body>
+</html>
