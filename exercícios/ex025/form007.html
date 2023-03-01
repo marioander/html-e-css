@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <p>
+                <label for="iclube">Seu clube:</label>
+                <select name="clube" id="iclube" required>
+                    <option value="NA" selected>--- Escolha ---</option>
+            
+                    <optgroup label="Nordeste">
+                        <option value="BAH">Bahia</option>
+                        <option value="CEA">Ceará</option>
+                        <option value="FOR">Fortaleza</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="COR">Corinthians</option>
+                        <option value="FLA">Flamengo</option>
+                        <option value="PAL">Palmeiras</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="icargo">Cargo desejado:</label>
+                <input type="text" name="cargo" id="icargo" list="listacargo" required>
+                <datalist id="listacargo">
+                        <option>Manager</option>
+                        <option>Marketing</option>
+                        <option>Comercial</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" style="resize:none" maxlength="100">
+                </textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
