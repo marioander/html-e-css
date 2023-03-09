@@ -28,10 +28,25 @@ h1 {
     padding-bottom: 20px;
 }
 
-#menu {
+#burger {
+    color: var(--cor1);
+    background-color: var(--cor5);
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#burger:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+#idmenu {
     text-align: center;
     color: var(--cor1);
     list-style-type: none;
+    display: none;
 }
 
 a {
@@ -48,7 +63,6 @@ a:hover {
 }
 
 main {
-
     padding: 10px;;
 }
 
